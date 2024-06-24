@@ -4,6 +4,7 @@ import com.origin.expandedoceans.block.ModBlocks;
 import com.origin.expandedoceans.item.ModItems;
 import net.fabricmc.api.ModInitializer;
 
+import net.fabricmc.fabric.api.registry.StrippableBlockRegistry;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 
@@ -16,5 +17,10 @@ public class ExpandedOceans implements ModInitializer {
 		LOGGER.info("Hello Fabric world!");
 		ModItems.registerModItems();
 		ModBlocks.registerModBlocks();
+
+		StrippableBlockRegistry.register(ModBlocks.WATER_MAPLE_LOG, ModBlocks.STRIPPED_WATER_MAPLE_LOG);
+		StrippableBlockRegistry.register(ModBlocks.WATER_MAPLE_WOOD, ModBlocks.STRIPPED_WATER_MAPLE_WOOD);
+
+
 	}
 }

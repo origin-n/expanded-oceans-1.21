@@ -50,10 +50,11 @@ public class ModBiomes {
         DefaultBiomeFeatures.addDefaultOres(biomeBuilder);
 
         biomeBuilder.feature(GenerationStep.Feature.VEGETAL_DECORATION, VegetationPlacedFeatures.TREES_MANGROVE);
-        DefaultBiomeFeatures.addSparseMelons(biomeBuilder);
         DefaultBiomeFeatures.addLargeFerns(biomeBuilder);
+        DefaultBiomeFeatures.addSparseMelons(biomeBuilder);
+
         DefaultBiomeFeatures.addKelp(biomeBuilder);
-        DefaultBiomeFeatures.addSeagrassOnStone(biomeBuilder);
+        //DefaultBiomeFeatures.addSeagrassOnStone(biomeBuilder);
 
         return new Biome.Builder()
                 .precipitation(true)
@@ -62,12 +63,12 @@ public class ModBiomes {
                 .generationSettings(biomeBuilder.build())
                 .spawnSettings(spawnBuilder.build())
                 .effects((new BiomeEffects.Builder())
-                        .waterColor(0xe82e3b)
-                        .waterFogColor(0xbf1b26)
-                        .skyColor(0x30c918)
-                        .grassColor(0x7f03fc)
-                        .foliageColor(0xd203fc)
-                        .fogColor(0x22a1e6).build())
+                        .waterColor(0x3F76E4)
+                        .waterFogColor(0x050533)
+                        .skyColor(0x7BA4FF)
+                        .grassColor(0x8eb971)
+                        .foliageColor(0x71A74D)
+                        .fogColor(0xadd8e6).build())
                 .build();
     }
 }

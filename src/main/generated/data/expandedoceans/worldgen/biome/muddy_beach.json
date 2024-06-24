@@ -8,12 +8,12 @@
   },
   "downfall": 0.4,
   "effects": {
-    "fog_color": 2269670,
-    "foliage_color": 13763580,
-    "grass_color": 8324092,
-    "sky_color": 3197208,
-    "water_color": 15216187,
-    "water_fog_color": 12524326
+    "fog_color": 11393254,
+    "foliage_color": 7448397,
+    "grass_color": 9353585,
+    "sky_color": 8103167,
+    "water_color": 4159204,
+    "water_fog_color": 329011
   },
   "features": [
     [],
@@ -66,10 +66,9 @@
     [
       "minecraft:glow_lichen",
       "minecraft:trees_mangrove",
-      "minecraft:patch_melon_sparse",
       "minecraft:patch_large_fern",
-      "minecraft:kelp_cold",
-      "minecraft:seagrass_simple"
+      "minecraft:patch_melon_sparse",
+      "minecraft:kelp_cold"
     ],
     [
       "minecraft:freeze_top_layer"

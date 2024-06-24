@@ -13,7 +13,7 @@ import terrablender.api.RegionType;
 import java.util.function.Consumer;
 
 public class ModOverworldRegion extends Region {
-    public ModOverworldRegion(Identifier name, RegionType type, int weight) {
+    public ModOverworldRegion(Identifier name, int weight) {
         super(name, RegionType.OVERWORLD, weight);
     }
 

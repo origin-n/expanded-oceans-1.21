@@ -1,10 +1,12 @@
 package com.origin.expandedoceans.datagen;
 
+import com.origin.expandedoceans.block.ModBlocks;
 import net.fabricmc.fabric.api.datagen.v1.FabricDataOutput;
 import net.fabricmc.fabric.api.datagen.v1.provider.FabricTagProvider;
 import net.minecraft.registry.RegistryKeys;
 import net.minecraft.registry.RegistryWrapper;
 import net.minecraft.registry.tag.BlockTags;
+import net.minecraft.registry.tag.ItemTags;
 import net.minecraft.registry.tag.TagKey;
 import net.minecraft.util.Identifier;
 
@@ -28,6 +30,13 @@ public class ModBlockTagProvider extends FabricTagProvider.BlockTagProvider {
         getOrCreateTagBuilder(BlockTags.SHOVEL_MINEABLE);
         getOrCreateTagBuilder(BlockTags.SWORD_EFFICIENT);
         getOrCreateTagBuilder(BlockTags.NEEDS_STONE_TOOL); //xx
+
+        getOrCreateTagBuilder(BlockTags.LOGS)
+                .add(ModBlocks.WATER_MAPLE_LOG)
+                .add(ModBlocks.STRIPPED_WATER_MAPLE_LOG)
+                .add(ModBlocks.WATER_MAPLE_WOOD)
+                .add(ModBlocks.STRIPPED_WATER_MAPLE_WOOD)
+        ;
 
     }
 }

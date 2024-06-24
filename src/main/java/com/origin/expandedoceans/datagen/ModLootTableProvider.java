@@ -5,6 +5,7 @@ import net.fabricmc.fabric.api.datagen.v1.FabricDataOutput;
 import net.fabricmc.fabric.api.datagen.v1.provider.FabricBlockLootTableProvider;
 import net.fabricmc.fabric.api.datagen.v1.provider.FabricLootTableProvider;
 import net.minecraft.block.Block;
+import net.minecraft.block.Blocks;
 import net.minecraft.enchantment.Enchantment;
 import net.minecraft.enchantment.Enchantments;
 import net.minecraft.item.Item;
@@ -28,6 +29,14 @@ public class ModLootTableProvider extends FabricBlockLootTableProvider {
     @Override
     public void generate() {
         addDrop(ModBlocks.SLUDGE_BLOCK);
+
+        addDrop(ModBlocks.WATER_MAPLE_LOG);
+        addDrop(ModBlocks.WATER_MAPLE_WOOD);
+        addDrop(ModBlocks.STRIPPED_WATER_MAPLE_LOG);
+        addDrop(ModBlocks.STRIPPED_WATER_MAPLE_WOOD);
+        addDrop(ModBlocks.WATER_MAPLE_PLANKS);
+
+        addDrop(ModBlocks.WATER_MAPLE_LEAVES, leavesDrops(ModBlocks.WATER_MAPLE_LEAVES, Blocks.BIRCH_SAPLING, 0.05f));
 
         //addDrop(ModBlocks.block, oreDrops(ModBlocks.block, ModItems.item drop));
         //addDrop(ModBlocks.block, copperLikeOreDrops(ModBlocks.block, ModItems.item drop));

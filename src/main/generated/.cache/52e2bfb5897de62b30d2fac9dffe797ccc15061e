@@ -1,2 +1,8 @@
-// 1.21	2024-06-23T21:08:21.5249535	Expanded Oceans/Block Loot Tables
+// 1.21	2024-06-24T13:26:51.2550701	Expanded Oceans/Block Loot Tables
+9f37e7957ee9b8c631bf375c0ced3cd3a280cc63 data\expandedoceans\loot_table\blocks\water_maple_log.json
 a7a9b2daf198e62a36e84212a9d2910367faf874 data\expandedoceans\loot_table\blocks\sludge_block.json
+a00643bdfa27061422d2b7843dbb5bef9e1a0d80 data\expandedoceans\loot_table\blocks\stripped_water_maple_wood.json
+70a45c6c7ca3d73d1fea36e383e82d57fdfd2735 data\expandedoceans\loot_table\blocks\stripped_water_maple_log.json
+26e6b073f9bc0059391125ad18ca134fbdf99c49 data\expandedoceans\loot_table\blocks\water_maple_wood.json
+b406b9d522f2c0237caf19c83cf1b180801d6374 data\expandedoceans\loot_table\blocks\water_maple_planks.json
+25ff32dfe31649ecb150180851893970f62752b5 data\expandedoceans\loot_table\blocks\water_maple_leaves.json
