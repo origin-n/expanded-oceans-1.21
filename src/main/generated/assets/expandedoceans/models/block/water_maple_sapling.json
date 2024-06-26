@@ -1,0 +1,6 @@
+{
+  "parent": "minecraft:block/cross",
+  "textures": {
+    "cross": "expandedoceans:block/water_maple_sapling"
+  }
+}

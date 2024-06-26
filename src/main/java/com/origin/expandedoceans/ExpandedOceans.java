@@ -22,7 +22,7 @@ public class ExpandedOceans implements ModInitializer {
 
 	@Override
 	public void onInitialize() {
-		LOGGER.info("Hello Fabric world!");
+		LOGGER.info("Hello Ocean world!");
 		ModItems.registerModItems();
 		ModBlocks.registerModBlocks();
 
