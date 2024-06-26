@@ -1,5 +1,6 @@
 package com.origin.expandedoceans.block;
 
+import com.origin.expandedoceans.world.tree.ModSaplingGenerators;
 import net.fabricmc.fabric.api.object.builder.v1.block.FabricBlockSettings;
 import com.origin.expandedoceans.ExpandedOceans;
 import net.minecraft.block.*;
@@ -40,6 +41,9 @@ public class ModBlocks {
             new Block(FabricBlockSettings.copyOf(Blocks.OAK_WOOD).sounds(BlockSoundGroup.WOOD)));
     public static final Block WATER_MAPLE_LEAVES = registerBlock("water_maple_leaves",
             new LeavesBlock(FabricBlockSettings.copyOf(Blocks.OAK_LEAVES).sounds(BlockSoundGroup.CHERRY_LEAVES).nonOpaque()));
+
+    public static final Block WATER_MAPLE_SAPLING = registerBlock("water_maple_sapling",
+            new SaplingBlock(ModSaplingGenerators.WATER_MAPLE, FabricBlockSettings.copyOf(Blocks.OAK_SAPLING)));
 
     private static Block registerBlock(String name, Block block) {
         registerBlockItem(name, block);

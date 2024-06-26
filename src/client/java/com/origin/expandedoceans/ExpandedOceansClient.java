@@ -10,6 +10,8 @@ public class ExpandedOceansClient implements ClientModInitializer {
 	public void onInitializeClient() {
 		BlockRenderLayerMap.INSTANCE.putBlock(ModBlocks.RED_SEAGRASS, RenderLayer.getTranslucent());
 		BlockRenderLayerMap.INSTANCE.putBlock(ModBlocks.WATER_MAPLE_LEAVES, RenderLayer.getTranslucent());
+
+		BlockRenderLayerMap.INSTANCE.putBlock(ModBlocks.WATER_MAPLE_SAPLING, RenderLayer.getTranslucent());
 		// This entrypoint is suitable for setting up client-specific logic, such as rendering.
 	}
 

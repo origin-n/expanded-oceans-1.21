@@ -36,8 +36,9 @@ public class ModLootTableProvider extends FabricBlockLootTableProvider {
         addDrop(ModBlocks.STRIPPED_WATER_MAPLE_LOG);
         addDrop(ModBlocks.STRIPPED_WATER_MAPLE_WOOD);
         addDrop(ModBlocks.WATER_MAPLE_PLANKS);
+        addDrop(ModBlocks.WATER_MAPLE_SAPLING);
 
-        addDrop(ModBlocks.WATER_MAPLE_LEAVES, leavesDrops(ModBlocks.WATER_MAPLE_LEAVES, Blocks.BIRCH_SAPLING, 0.05f));
+        addDrop(ModBlocks.WATER_MAPLE_LEAVES, leavesDrops(ModBlocks.WATER_MAPLE_LEAVES, ModBlocks.WATER_MAPLE_SAPLING, 0.05f));
 
         addDrop(ModBlocks.SAPPHIRE_ORE, oreDrops(ModBlocks.SAPPHIRE_ORE, ModItems.SAPPHIRE));
         addDrop(ModBlocks.DEEPSLATE_SAPPHIRE_ORE, oreDrops(ModBlocks.DEEPSLATE_SAPPHIRE_ORE, ModItems.SAPPHIRE));
