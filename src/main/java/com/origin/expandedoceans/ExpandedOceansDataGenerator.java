@@ -1,6 +1,8 @@
 package com.origin.expandedoceans;
 
 import com.origin.expandedoceans.datagen.*;
+import com.origin.expandedoceans.world.ModConfiguredFeatures;
+import com.origin.expandedoceans.world.ModPlacedFeatures;
 import com.origin.expandedoceans.world.biome.ModBiomes;
 import net.fabricmc.fabric.api.datagen.v1.DataGeneratorEntrypoint;
 import net.fabricmc.fabric.api.datagen.v1.FabricDataGenerator;
@@ -24,5 +26,8 @@ public class ExpandedOceansDataGenerator implements DataGeneratorEntrypoint {
     @Override
     public void buildRegistry(RegistryBuilder registryBuilder){
         registryBuilder.addRegistry(RegistryKeys.BIOME, ModBiomes::bootstrap);
+        registryBuilder.addRegistry(RegistryKeys.PLACED_FEATURE, ModPlacedFeatures::bootstrap);
+        registryBuilder.addRegistry(RegistryKeys.CONFIGURED_FEATURE, ModConfiguredFeatures::bootstrap);
+
     }
 }

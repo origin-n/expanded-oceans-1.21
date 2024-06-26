@@ -2,13 +2,17 @@
   "item.expandedoceans.sludge": "Sludge",
 
   "block.expandedoceans.sludge_block": "Sludge Block",
+  "block.expandedoceans.sapphire": "Sapphire",
 
   "block.expandedoceans.water_maple_log": "Water Maple Log",
   "block.expandedoceans.water_maple_wood": "Water Maple Wood",
   "block.expandedoceans.stripped_water_maple_log": "Stripped Water Maple Log",
   "block.expandedoceans.stripped_water_maple_wood": "Stripped Water Maple Wood",
   "block.expandedoceans.water_maple_leaves": "Water Maple Leaves",
+  "block.expandedoceans.water_maple_planks": "Water Maple Planks",
+
+  "block.expandedoceans.sapphire_ore": "Sapphire Ore",
+  "block.expandedoceans.deepslate_sapphire_ore": "Deepslate Sapphire Ore",
 
   "block.expandedoceans.red_seagrass": "Red Seagrass"
-
 }

@@ -27,11 +27,15 @@ public class ModModelProvider extends FabricModelProvider {
         blockStateModelGenerator.registerSimpleCubeAll(ModBlocks.WATER_MAPLE_LEAVES);
         blockStateModelGenerator.registerSimpleCubeAll(ModBlocks.WATER_MAPLE_PLANKS);
 
+        blockStateModelGenerator.registerSimpleCubeAll(ModBlocks.SAPPHIRE_ORE);
+        blockStateModelGenerator.registerSimpleCubeAll(ModBlocks.DEEPSLATE_SAPPHIRE_ORE);
+
     }
 
     @Override
     public void generateItemModels(ItemModelGenerator itemModelGenerator) {
         itemModelGenerator.register(ModItems.SLUDGE, Models.GENERATED);
+        itemModelGenerator.register(ModItems.SAPPHIRE, Models.GENERATED);
 
 
     }

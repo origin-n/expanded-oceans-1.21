@@ -1,6 +1,7 @@
 package com.origin.expandedoceans.datagen;
 
 import com.origin.expandedoceans.block.ModBlocks;
+import com.origin.expandedoceans.item.ModItems;
 import net.fabricmc.fabric.api.datagen.v1.FabricDataOutput;
 import net.fabricmc.fabric.api.datagen.v1.provider.FabricBlockLootTableProvider;
 import net.fabricmc.fabric.api.datagen.v1.provider.FabricLootTableProvider;
@@ -38,7 +39,8 @@ public class ModLootTableProvider extends FabricBlockLootTableProvider {
 
         addDrop(ModBlocks.WATER_MAPLE_LEAVES, leavesDrops(ModBlocks.WATER_MAPLE_LEAVES, Blocks.BIRCH_SAPLING, 0.05f));
 
-        //addDrop(ModBlocks.block, oreDrops(ModBlocks.block, ModItems.item drop));
+        addDrop(ModBlocks.SAPPHIRE_ORE, oreDrops(ModBlocks.SAPPHIRE_ORE, ModItems.SAPPHIRE));
+        addDrop(ModBlocks.DEEPSLATE_SAPPHIRE_ORE, oreDrops(ModBlocks.DEEPSLATE_SAPPHIRE_ORE, ModItems.SAPPHIRE));
         //addDrop(ModBlocks.block, copperLikeOreDrops(ModBlocks.block, ModItems.item drop));
 
     }

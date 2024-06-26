@@ -1,2 +1,4 @@
-// 1.21	2024-06-24T13:26:51.2590688	Expanded Oceans/World Gen
+// 1.21	2024-06-26T00:50:50.4518629	Expanded Oceans/World Gen
 1b049002a05d76598e14f9fcf944b2fb3f133dda data\expandedoceans\worldgen\biome\muddy_beach.json
+c78bbb2862cefbc6f2037b25454b275186ca4dcc data\expandedoceans\worldgen\placed_feature\sapphire_ore_placed.json
+5498196ed54aed6361fa0974c5f311932a5d5dbe data\expandedoceans\worldgen\configured_feature\sapphire_ore.json

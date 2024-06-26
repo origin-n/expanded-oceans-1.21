@@ -15,8 +15,17 @@ public class ModBlocks {
     public static final Block SLUDGE_BLOCK = registerBlock("sludge_block",
             new Block(FabricBlockSettings.copyOf(Blocks.MUD).sounds(BlockSoundGroup.MUD)));
 
+    public static final Block SAPPHIRE_ORE = registerBlock("sapphire_ore",
+            new Block(FabricBlockSettings.copyOf(Blocks.EMERALD_ORE)));
+    public static final Block DEEPSLATE_SAPPHIRE_ORE = registerBlock("deepslate_sapphire_ore",
+            new Block(FabricBlockSettings.copyOf(Blocks.DEEPSLATE_EMERALD_ORE)));
+
     public static final Block RED_SEAGRASS = registerBlock("red_seagrass",
             new SeagrassBlock(FabricBlockSettings.create().nonOpaque().sounds(BlockSoundGroup.GRASS).notSolid().noCollision()));
+    public static final Block RED_SEAGRASS_TOP = registerBlock("red_seagrass_top",
+            new SeagrassBlock(FabricBlockSettings.copyOf(Blocks.SEAGRASS).nonOpaque()));
+    public static final Block RED_SEAGRASS_BOTTOM = registerBlock("red_seagrass_bottom",
+            new SeagrassBlock(FabricBlockSettings.copyOf(Blocks.SEAGRASS).nonOpaque()));
 
     public static final Block WATER_MAPLE_LOG = registerBlock("water_maple_log",
             new PillarBlock(FabricBlockSettings.copyOf(Blocks.OAK_LOG).sounds(BlockSoundGroup.WOOD)));

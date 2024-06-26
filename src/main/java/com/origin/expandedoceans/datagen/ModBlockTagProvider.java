@@ -22,14 +22,18 @@ public class ModBlockTagProvider extends FabricTagProvider.BlockTagProvider {
 //        getOrCreateTagBuilder(ModTags.Block.tag)
 //                .add(ModBlocks.block);
 //                .forceAddTag(BlockTags.GOLD_ORES)
-        getOrCreateTagBuilder(BlockTags.PICKAXE_MINEABLE);
+        getOrCreateTagBuilder(BlockTags.PICKAXE_MINEABLE)
+                .add(ModBlocks.SAPPHIRE_ORE)
+                .add(ModBlocks.DEEPSLATE_SAPPHIRE_ORE);
 
-//                 .add(ModBlocks.x)
         getOrCreateTagBuilder(BlockTags.AXE_MINEABLE);
         getOrCreateTagBuilder(BlockTags.HOE_MINEABLE);
         getOrCreateTagBuilder(BlockTags.SHOVEL_MINEABLE);
         getOrCreateTagBuilder(BlockTags.SWORD_EFFICIENT);
-        getOrCreateTagBuilder(BlockTags.NEEDS_STONE_TOOL); //xx
+
+        getOrCreateTagBuilder(BlockTags.NEEDS_STONE_TOOL)
+                .add(ModBlocks.SAPPHIRE_ORE)
+                .add(ModBlocks.DEEPSLATE_SAPPHIRE_ORE);
 
         getOrCreateTagBuilder(BlockTags.LOGS)
                 .add(ModBlocks.WATER_MAPLE_LOG)

@@ -19,15 +19,15 @@ import java.util.List;
 import java.util.concurrent.CompletableFuture;
 
 public class ModRecipeProvider extends FabricRecipeProvider {
-    //private static List<ItemConvertible> X_SMELTABLE = List.of(ModItems.raw_item, ModBlocks.raw_ore)
+    private static List<ItemConvertible> SAPPHIRE_SMELTABLE = List.of(ModBlocks.SAPPHIRE_ORE, ModBlocks.DEEPSLATE_SAPPHIRE_ORE);
     public ModRecipeProvider(FabricDataOutput output, CompletableFuture<RegistryWrapper.WrapperLookup> registriesFuture) {
         super(output, registriesFuture);
     }
 
     @Override
     public void generate(RecipeExporter exporter) {
-        //offerSmelting(exporter,X_SMELTABLE, RecipeCategory.MISC, ModItems.processedItem, exp, time, group"X_Result");
-        //offerBlasting(exporter,X_SMELTABLE, RecipeCategory.MISC, ModItems.processedItem, exp, time, group"X_Result");
+        offerSmelting(exporter,SAPPHIRE_SMELTABLE, RecipeCategory.MISC, ModItems.SAPPHIRE, 200, 200, "SAPPHIRE");
+        offerBlasting(exporter,SAPPHIRE_SMELTABLE, RecipeCategory.MISC, ModItems.SAPPHIRE, 200, 100, "SAPPHIRE");
 
         //offerReversibleCompactingRecipes(exporter, RecipeCategory.BUILDING_BLOCKS, ModItems.diamond, RecipeCategory.DECORATIONS, ModBlocks.diamond_block);
         offer2x2CompactingRecipe(exporter, RecipeCategory.BUILDING_BLOCKS, ModItems.SLUDGE, ModBlocks.SLUDGE_BLOCK);
