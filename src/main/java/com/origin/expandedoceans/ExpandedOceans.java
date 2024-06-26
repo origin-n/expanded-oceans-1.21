@@ -3,6 +3,7 @@ package com.origin.expandedoceans;
 import com.origin.expandedoceans.block.ModBlocks;
 import com.origin.expandedoceans.item.ModItems;
 import com.origin.expandedoceans.world.gen.ModWorldGeneration;
+import com.origin.expandedoceans.world.structure.ModStructures;
 import net.fabricmc.api.ModInitializer;
 
 import net.fabricmc.fabric.api.registry.StrippableBlockRegistry;
@@ -18,6 +19,7 @@ public class ExpandedOceans implements ModInitializer {
 		LOGGER.info("Hello Ocean world!");
 		ModItems.registerModItems();
 		ModBlocks.registerModBlocks();
+		ModStructures.registerStructureFeatures();
 
 		StrippableBlockRegistry.register(ModBlocks.WATER_MAPLE_LOG, ModBlocks.STRIPPED_WATER_MAPLE_LOG);
 		StrippableBlockRegistry.register(ModBlocks.WATER_MAPLE_WOOD, ModBlocks.STRIPPED_WATER_MAPLE_WOOD);

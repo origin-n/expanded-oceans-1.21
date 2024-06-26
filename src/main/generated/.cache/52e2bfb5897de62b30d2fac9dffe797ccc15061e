@@ -1,4 +1,4 @@
-// 1.21	2024-06-26T17:38:05.1711695	Expanded Oceans/Block Loot Tables
+// 1.21	2024-06-26T19:53:50.9609499	Expanded Oceans/Block Loot Tables
 0b41017412e2ad69e2aeb591cf5f43532f2c4819 data\expandedoceans\loot_table\blocks\stripped_ocean_willow_wood.json
 a7a9b2daf198e62a36e84212a9d2910367faf874 data\expandedoceans\loot_table\blocks\sludge_block.json
 a00643bdfa27061422d2b7843dbb5bef9e1a0d80 data\expandedoceans\loot_table\blocks\stripped_water_maple_wood.json
@@ -14,5 +14,5 @@ f4c2ac215a18e2680c5a2af9e78c12b02a864666 data\expandedoceans\loot_table\blocks\o
 26e6b073f9bc0059391125ad18ca134fbdf99c49 data\expandedoceans\loot_table\blocks\water_maple_wood.json
 117857d43e4850f547a2130c2ca7ed0503ba8348 data\expandedoceans\loot_table\blocks\sapphire_ore.json
 82fba7328599aafb81f2f1f2ab8ffec855e0b394 data\expandedoceans\loot_table\blocks\water_maple_leaves.json
-703202bd570bd2490cfd00c2e39ab99e89a3121d data\expandedoceans\loot_table\blocks\deepslate_sapphire_ore.json
 2324694d20bc18d8e146d4402e76c18c8456db10 data\expandedoceans\loot_table\blocks\ocean_willow_log.json
+703202bd570bd2490cfd00c2e39ab99e89a3121d data\expandedoceans\loot_table\blocks\deepslate_sapphire_ore.json

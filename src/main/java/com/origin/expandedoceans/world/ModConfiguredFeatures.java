@@ -2,7 +2,6 @@ package com.origin.expandedoceans.world;
 
 import com.origin.expandedoceans.ExpandedOceans;
 import com.origin.expandedoceans.block.ModBlocks;
-import com.origin.expandedoceans.world.biome.customfeatures.WaterTreeFeature;
 import net.minecraft.block.Blocks;
 import net.minecraft.registry.Registerable;
 import net.minecraft.registry.RegistryKey;
@@ -15,11 +14,7 @@ import net.minecraft.util.math.intprovider.ConstantIntProvider;
 import net.minecraft.world.gen.feature.*;
 import net.minecraft.world.gen.feature.size.TwoLayersFeatureSize;
 import net.minecraft.world.gen.foliage.BlobFoliagePlacer;
-import net.minecraft.world.gen.foliage.BushFoliagePlacer;
-import net.minecraft.world.gen.foliage.RandomSpreadFoliagePlacer;
-import net.minecraft.world.gen.foliage.SpruceFoliagePlacer;
 import net.minecraft.world.gen.stateprovider.BlockStateProvider;
-import net.minecraft.world.gen.trunk.BendingTrunkPlacer;
 import net.minecraft.world.gen.trunk.StraightTrunkPlacer;
 
 import java.util.List;
@@ -40,7 +35,7 @@ public class ModConfiguredFeatures {
 
         register(context, SAPPHIRE_ORE_KEY, Feature.ORE, new OreFeatureConfig(overworldSapphireOres, 4));
 
-        register(context, WATER_MAPLE_KEY, WaterTreeFeature.TREE, new TreeFeatureConfig.Builder(
+        register(context, WATER_MAPLE_KEY, TreeFeature.TREE, new TreeFeatureConfig.Builder(
                 BlockStateProvider.of(ModBlocks.WATER_MAPLE_LOG),
                 new StraightTrunkPlacer(3, 1, 2),
 
@@ -49,10 +44,9 @@ public class ModConfiguredFeatures {
 
                 new TwoLayersFeatureSize(1, 0, 1))
                 .dirtProvider(BlockStateProvider.of(Blocks.GRAVEL))
-                .forceDirt()
                 .build());
 
-        register(context, OCEAN_WILLOW_KEY, WaterTreeFeature.TREE, new TreeFeatureConfig.Builder(
+        register(context, OCEAN_WILLOW_KEY, TreeFeature.TREE, new TreeFeatureConfig.Builder(
                 BlockStateProvider.of(ModBlocks.OCEAN_WILLOW_LOG),
                 new StraightTrunkPlacer(3, 1, 2),
 
@@ -61,7 +55,6 @@ public class ModConfiguredFeatures {
 
                 new TwoLayersFeatureSize(1, 0, 1))
                 .dirtProvider(BlockStateProvider.of(Blocks.GRAVEL))
-                .forceDirt()
                 .build());
 
     }
