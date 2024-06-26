@@ -29,6 +29,13 @@ public class ModModelProvider extends FabricModelProvider {
 
         blockStateModelGenerator.registerTintableCross(ModBlocks.WATER_MAPLE_SAPLING, BlockStateModelGenerator.TintType.NOT_TINTED);
 
+        blockStateModelGenerator.registerLog(ModBlocks.OCEAN_WILLOW_LOG).log(ModBlocks.OCEAN_WILLOW_LOG).wood(ModBlocks.OCEAN_WILLOW_WOOD);
+        blockStateModelGenerator.registerLog(ModBlocks.STRIPPED_OCEAN_WILLOW_LOG).log(ModBlocks.STRIPPED_OCEAN_WILLOW_LOG).wood(ModBlocks.STRIPPED_OCEAN_WILLOW_WOOD);
+        blockStateModelGenerator.registerSimpleCubeAll(ModBlocks.OCEAN_WILLOW_LEAVES);
+        blockStateModelGenerator.registerSimpleCubeAll(ModBlocks.OCEAN_WILLOW_PLANKS);
+
+        blockStateModelGenerator.registerTintableCross(ModBlocks.OCEAN_WILLOW_SAPLING, BlockStateModelGenerator.TintType.NOT_TINTED);
+
         blockStateModelGenerator.registerSimpleCubeAll(ModBlocks.SAPPHIRE_ORE);
         blockStateModelGenerator.registerSimpleCubeAll(ModBlocks.DEEPSLATE_SAPPHIRE_ORE);
 

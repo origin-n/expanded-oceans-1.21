@@ -1,3 +1,14 @@
 {
-  "values": []
+  "values": [
+    "expandedoceans:water_maple_planks",
+    "expandedoceans:water_maple_log",
+    "expandedoceans:water_maple_wood",
+    "expandedoceans:stripped_water_maple_log",
+    "expandedoceans:stripped_water_maple_wood",
+    "expandedoceans:ocean_willow_planks",
+    "expandedoceans:ocean_willow_log",
+    "expandedoceans:ocean_willow_wood",
+    "expandedoceans:stripped_ocean_willow_log",
+    "expandedoceans:stripped_ocean_willow_wood"
+  ]
 }

@@ -16,9 +16,9 @@ import net.minecraft.util.math.random.Random;
 
 import static net.minecraft.state.property.Properties.WATERLOGGED;
 
-public class WaterMapleSaplingBlock extends SaplingBlock {
-    public WaterMapleSaplingBlock(SaplingGenerator generator) {
-        super(generator, AbstractBlock.Settings.create()
+public class WaterSaplingBlock extends SaplingBlock {
+    public WaterSaplingBlock(SaplingGenerator generator, Settings settings) {
+        super(generator, settings
                 .noCollision()
                 .breakInstantly()
                 .sounds(BlockSoundGroup.GRASS)
@@ -28,21 +28,23 @@ public class WaterMapleSaplingBlock extends SaplingBlock {
 
     @Override
     protected void appendProperties(StateManager.Builder<Block, BlockState> builder) {
-        builder.add(WATERLOGGED);
+        super.appendProperties(builder.add(WATERLOGGED));
     }
 
     @Override
     public void grow(ServerWorld world, Random random, BlockPos pos, BlockState state) {
-        if (world.getBlockState(pos).isOf(Blocks.WATER)) {
+        if (world.getBlockState(pos).getFluidState().isStill()) {
             super.grow(world, random, pos, state);
         }
     }
 
     @Override
     public boolean canPlaceAt(BlockState state, WorldView world, BlockPos pos) {
-        BlockPos blockPos = pos.down();
-        BlockState blockState = world.getBlockState(blockPos);
-        return blockState.isIn(BlockTags.SAND) || blockState.isOf(Blocks.GRAVEL) || blockState.isOf(Blocks.WATER);
+        FluidState fluidState = world.getFluidState(pos);
+        return (world.getBlockState(pos.down()).isIn(BlockTags.SAND)
+                || world.getBlockState(pos.down()).isOf(Blocks.GRAVEL)
+                || world.getBlockState(pos.down()).isIn(BlockTags.DIRT)
+                && fluidState.isOf(Fluids.WATER));
 
     }
 

@@ -1,7 +1,7 @@
 package com.origin.expandedoceans.block;
 
+import com.origin.expandedoceans.block.custom.WaterSaplingBlock;
 import com.origin.expandedoceans.world.tree.ModSaplingGenerators;
-import com.origin.expandedoceans.block.custom.WaterMapleSaplingBlock;
 import net.fabricmc.fabric.api.object.builder.v1.block.FabricBlockSettings;
 import com.origin.expandedoceans.ExpandedOceans;
 import net.minecraft.block.*;
@@ -44,7 +44,24 @@ public class ModBlocks {
             new LeavesBlock(FabricBlockSettings.copyOf(Blocks.OAK_LEAVES).sounds(BlockSoundGroup.CHERRY_LEAVES).nonOpaque()));
 
     public static final Block WATER_MAPLE_SAPLING = registerBlock("water_maple_sapling",
-            new WaterMapleSaplingBlock(ModSaplingGenerators.WATER_MAPLE));
+            new WaterSaplingBlock(ModSaplingGenerators.WATER_MAPLE, FabricBlockSettings.copyOf(Blocks.OAK_SAPLING)));
+
+    public static final Block OCEAN_WILLOW_LOG = registerBlock("ocean_willow_log",
+            new PillarBlock(FabricBlockSettings.copyOf(Blocks.OAK_LOG).sounds(BlockSoundGroup.WOOD)));
+    public static final Block OCEAN_WILLOW_WOOD = registerBlock("ocean_willow_wood",
+            new PillarBlock(FabricBlockSettings.copyOf(Blocks.OAK_WOOD).sounds(BlockSoundGroup.WOOD)));
+    public static final Block STRIPPED_OCEAN_WILLOW_LOG = registerBlock("stripped_ocean_willow_log",
+            new PillarBlock(FabricBlockSettings.copyOf(Blocks.STRIPPED_OAK_LOG).sounds(BlockSoundGroup.WOOD)));
+    public static final Block STRIPPED_OCEAN_WILLOW_WOOD = registerBlock("stripped_ocean_willow_wood",
+            new PillarBlock(FabricBlockSettings.copyOf(Blocks.STRIPPED_OAK_WOOD).sounds(BlockSoundGroup.WOOD)));
+
+    public static final Block OCEAN_WILLOW_PLANKS = registerBlock("ocean_willow_planks",
+            new Block(FabricBlockSettings.copyOf(Blocks.OAK_WOOD).sounds(BlockSoundGroup.WOOD)));
+    public static final Block OCEAN_WILLOW_LEAVES = registerBlock("ocean_willow_leaves",
+            new LeavesBlock(FabricBlockSettings.copyOf(Blocks.OAK_LEAVES).sounds(BlockSoundGroup.CHERRY_LEAVES).nonOpaque()));
+
+    public static final Block OCEAN_WILLOW_SAPLING = registerBlock("ocean_willow_sapling",
+            new WaterSaplingBlock(ModSaplingGenerators.OCEAN_WILLOW, FabricBlockSettings.copyOf(Blocks.OAK_SAPLING)));
 
     private static Block registerBlock(String name, Block block) {
         registerBlockItem(name, block);

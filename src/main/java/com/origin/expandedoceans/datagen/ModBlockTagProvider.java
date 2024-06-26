@@ -24,9 +24,23 @@ public class ModBlockTagProvider extends FabricTagProvider.BlockTagProvider {
 //                .forceAddTag(BlockTags.GOLD_ORES)
         getOrCreateTagBuilder(BlockTags.PICKAXE_MINEABLE)
                 .add(ModBlocks.SAPPHIRE_ORE)
-                .add(ModBlocks.DEEPSLATE_SAPPHIRE_ORE);
+                .add(ModBlocks.DEEPSLATE_SAPPHIRE_ORE)
+        ;
 
-        getOrCreateTagBuilder(BlockTags.AXE_MINEABLE);
+        getOrCreateTagBuilder(BlockTags.AXE_MINEABLE)
+                .add(ModBlocks.WATER_MAPLE_PLANKS)
+                .add(ModBlocks.WATER_MAPLE_LOG)
+                .add(ModBlocks.WATER_MAPLE_WOOD)
+                .add(ModBlocks.STRIPPED_WATER_MAPLE_LOG)
+                .add(ModBlocks.STRIPPED_WATER_MAPLE_WOOD)
+
+                .add(ModBlocks.OCEAN_WILLOW_PLANKS)
+                .add(ModBlocks.OCEAN_WILLOW_LOG)
+                .add(ModBlocks.OCEAN_WILLOW_WOOD)
+                .add(ModBlocks.STRIPPED_OCEAN_WILLOW_LOG)
+                .add(ModBlocks.STRIPPED_OCEAN_WILLOW_WOOD)
+        ;
+
         getOrCreateTagBuilder(BlockTags.HOE_MINEABLE);
         getOrCreateTagBuilder(BlockTags.SHOVEL_MINEABLE);
         getOrCreateTagBuilder(BlockTags.SWORD_EFFICIENT);
@@ -40,6 +54,11 @@ public class ModBlockTagProvider extends FabricTagProvider.BlockTagProvider {
                 .add(ModBlocks.STRIPPED_WATER_MAPLE_LOG)
                 .add(ModBlocks.WATER_MAPLE_WOOD)
                 .add(ModBlocks.STRIPPED_WATER_MAPLE_WOOD)
+
+                .add(ModBlocks.OCEAN_WILLOW_LOG)
+                .add(ModBlocks.STRIPPED_OCEAN_WILLOW_LOG)
+                .add(ModBlocks.OCEAN_WILLOW_WOOD)
+                .add(ModBlocks.STRIPPED_OCEAN_WILLOW_WOOD)
         ;
 
     }

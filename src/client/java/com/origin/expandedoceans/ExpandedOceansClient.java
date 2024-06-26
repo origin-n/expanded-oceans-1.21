@@ -8,11 +8,13 @@ import net.minecraft.client.render.RenderLayer;
 public class ExpandedOceansClient implements ClientModInitializer {
 	@Override
 	public void onInitializeClient() {
-		BlockRenderLayerMap.INSTANCE.putBlock(ModBlocks.RED_SEAGRASS, RenderLayer.getTranslucent());
+		BlockRenderLayerMap.INSTANCE.putBlock(ModBlocks.RED_SEAGRASS, RenderLayer.getCutout());
+
 		BlockRenderLayerMap.INSTANCE.putBlock(ModBlocks.WATER_MAPLE_LEAVES, RenderLayer.getTranslucent());
 
-		BlockRenderLayerMap.INSTANCE.putBlock(ModBlocks.WATER_MAPLE_SAPLING, RenderLayer.getTranslucent());
-		// This entrypoint is suitable for setting up client-specific logic, such as rendering.
+		BlockRenderLayerMap.INSTANCE.putBlock(ModBlocks.WATER_MAPLE_SAPLING, RenderLayer.getCutout());
+		BlockRenderLayerMap.INSTANCE.putBlock(ModBlocks.OCEAN_WILLOW_SAPLING, RenderLayer.getCutout());
+
 	}
 
 }

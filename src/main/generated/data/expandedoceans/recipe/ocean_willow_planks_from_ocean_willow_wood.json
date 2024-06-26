@@ -1,0 +1,14 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "category": "misc",
+  "group": "ocean_willow",
+  "ingredients": [
+    {
+      "item": "expandedoceans:ocean_willow_wood"
+    }
+  ],
+  "result": {
+    "count": 4,
+    "id": "expandedoceans:ocean_willow_planks"
+  }
+}

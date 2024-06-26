@@ -14,4 +14,12 @@ public class ModSaplingGenerators {
                     Optional.empty(),
                     Optional.empty());
 
+    public static final SaplingGenerator OCEAN_WILLOW =
+            new SaplingGenerator("water_maple", 0f, Optional.empty(),
+                    Optional.empty(),
+                    Optional.of(ModConfiguredFeatures.OCEAN_WILLOW_KEY),
+                    Optional.empty(),
+                    Optional.empty(),
+                    Optional.empty());
+
 }
