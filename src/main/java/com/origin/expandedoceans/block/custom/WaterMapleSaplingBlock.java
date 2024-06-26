@@ -10,7 +10,6 @@ import net.minecraft.sound.BlockSoundGroup;
 import net.minecraft.state.StateManager;
 import net.minecraft.util.math.BlockPos;
 import net.minecraft.util.math.Direction;
-import net.minecraft.world.World;
 import net.minecraft.world.WorldAccess;
 import net.minecraft.world.WorldView;
 import net.minecraft.util.math.random.Random;
@@ -18,8 +17,8 @@ import net.minecraft.util.math.random.Random;
 import static net.minecraft.state.property.Properties.WATERLOGGED;
 
 public class WaterMapleSaplingBlock extends SaplingBlock {
-    public WaterMapleSaplingBlock(SaplingGenerator generator, Settings settings) {
-        super(generator, Settings.create()
+    public WaterMapleSaplingBlock(SaplingGenerator generator) {
+        super(generator, AbstractBlock.Settings.create()
                 .noCollision()
                 .breakInstantly()
                 .sounds(BlockSoundGroup.GRASS)
@@ -44,6 +43,7 @@ public class WaterMapleSaplingBlock extends SaplingBlock {
         BlockPos blockPos = pos.down();
         BlockState blockState = world.getBlockState(blockPos);
         return blockState.isIn(BlockTags.SAND) || blockState.isOf(Blocks.GRAVEL) || blockState.isOf(Blocks.WATER);
+
     }
 
     @Override
@@ -61,12 +61,7 @@ public class WaterMapleSaplingBlock extends SaplingBlock {
 
     @Override
     public BlockState getPlacementState(ItemPlacementContext context) {
-        BlockPos pos = context.getBlockPos();
-        World world = context.getWorld();
-        if (world.getFluidState(pos).getFluid() == Fluids.WATER) {
-            return super.getPlacementState(context).with(WATERLOGGED, true);
-        } else {
-            return super.getPlacementState(context);
-        }
+        FluidState fluidState = context.getWorld().getFluidState(context.getBlockPos());
+        return this.getDefaultState().with(WATERLOGGED, fluidState.getFluid() == Fluids.WATER);
     }
 }
