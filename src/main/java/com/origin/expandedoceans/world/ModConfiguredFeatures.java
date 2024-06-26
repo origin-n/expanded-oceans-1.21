@@ -2,6 +2,8 @@ package com.origin.expandedoceans.world;
 
 import com.origin.expandedoceans.ExpandedOceans;
 import com.origin.expandedoceans.block.ModBlocks;
+import com.origin.expandedoceans.world.biome.customfeatures.WaterTreeFeature;
+import net.minecraft.block.Blocks;
 import net.minecraft.registry.Registerable;
 import net.minecraft.registry.RegistryKey;
 import net.minecraft.registry.RegistryKeys;
@@ -38,23 +40,29 @@ public class ModConfiguredFeatures {
 
         register(context, SAPPHIRE_ORE_KEY, Feature.ORE, new OreFeatureConfig(overworldSapphireOres, 4));
 
-        register(context, WATER_MAPLE_KEY, Feature.TREE, new TreeFeatureConfig.Builder(
+        register(context, WATER_MAPLE_KEY, WaterTreeFeature.TREE, new TreeFeatureConfig.Builder(
                 BlockStateProvider.of(ModBlocks.WATER_MAPLE_LOG),
                 new StraightTrunkPlacer(3, 1, 2),
 
                 BlockStateProvider.of(ModBlocks.WATER_MAPLE_LEAVES),
                 new BlobFoliagePlacer(ConstantIntProvider.create(2), ConstantIntProvider.create(1),2),
 
-                new TwoLayersFeatureSize(1, 0, 1)).build());
+                new TwoLayersFeatureSize(1, 0, 1))
+                .dirtProvider(BlockStateProvider.of(Blocks.GRAVEL))
+                .forceDirt()
+                .build());
 
-        register(context, OCEAN_WILLOW_KEY, Feature.TREE, new TreeFeatureConfig.Builder(
+        register(context, OCEAN_WILLOW_KEY, WaterTreeFeature.TREE, new TreeFeatureConfig.Builder(
                 BlockStateProvider.of(ModBlocks.OCEAN_WILLOW_LOG),
                 new StraightTrunkPlacer(3, 1, 2),
 
                 BlockStateProvider.of(ModBlocks.OCEAN_WILLOW_LEAVES),
                 new BlobFoliagePlacer(ConstantIntProvider.create(2), ConstantIntProvider.create(1),2),
 
-                new TwoLayersFeatureSize(1, 0, 1)).build());
+                new TwoLayersFeatureSize(1, 0, 1))
+                .dirtProvider(BlockStateProvider.of(Blocks.GRAVEL))
+                .forceDirt()
+                .build());
 
     }
 
